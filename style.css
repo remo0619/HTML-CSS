@@ -183,6 +183,7 @@ a:hover {
 @media screen and (max-width: 414px) {
     .header {
         height: 48px;
+        width: 100%;
         padding: 0;
     }
 
@@ -209,62 +210,4 @@ a:hover {
     width: 100%;
     z-index: -1;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .first-view {
-        position: relative;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1080px) {
-        .first-view {
-        position: relative;
-        width: 100%;
-    }
-    /*.header-menu-nav-humburger {
-        display: block;
-        position: relative;
-    }
-
-    .humburger-line {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #A2A2A4;
-    }
-
-    .humburger-line:first-child {
-        position: absolute;
-        top: 0;
-    }
-
-    .header-menu-list {
-        background-color: rgba(0, 0, 0, 0.8);
-        display: block;
-        position: fixed;
-        top: 54px;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 99;
-    }
-
-    .header-menu-item-link {
-        color: white;
-        padding: 20px 0;
-    }
-
-    .header-menu-item-link > span:first-child {
-        font-size: 16px;
-        letter-spacing: 5px;
-    }
-
-    .header-menu-item-link > span:last-child {
-        font-size: 12px;
-        letter-spacing: 2px;
-        margin-top: 10px;
-        color: #F79214;
-    }*/
 }

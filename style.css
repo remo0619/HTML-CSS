@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0 36px 0 36px;
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.header-logo-link {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+
+.header-logo-img {
+    display: block;
+    height: 20px;
+    width: auto;
+    margin: 25px 0;
+}
+
+.header-menu-nav {
+    display: inline-flex;
+    }
+
+.header-menu-nav-humburger {
+    display: none;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    flex-shrink: 0;
+}
+
+.header-menu-item {
+    margin-right: 45px;
+}
+
+.header-menu-item-link {
+    color: #333;
+}
+
+.header-menu-item:last-child {
+    margin-right: 75px;
+}
+
+.header-menu-button {
+    display: flex;
+}
+
+.header-menu-item-link > span {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-menu-item-link > span:first-child {
+    font-family: "Loto", sans-serif;
+    font-size: 12px;
+    line-height: 14.4px;
+}
+
+.header-menu-item-link > span:last-child {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.header-menu-item-link {
+    display: block;
+}
+
+.header-menu-button-link {
+    display: block;    
+    background-color: #F79214;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-family: "游ゴシック", YuGothic;
+    font-size: 12px;
+}
+
+.first-view {
+    position: relative;
+    width: 100%;
+    height: 739px;
+}
+
+.left-rectangle {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: -1;
+}
+
+.right-rectangle {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    z-index: -1;
+}
+
+.fill-rectangle {
+    position: absolute;
+    top: 84px;
+    left: -70px;
+    z-index: -1;
+}
+
+.main-visual {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 775px;
+    z-index: -1;
+}
+
+.first-view-container {
+    position: relative;
+}
+
+.first-view-content {
+    position: absolute;
+    top: 190px;
+    left: 430px;
+    width: 482px;
+}
+
+.first-view-title {
+    font-family: "Loto", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #333;
+}
+
+.first-view-button-link {
+    display: block;
+    text-align: center;
+    background-color: #F79214;
+    color: white;
+    border-radius: 30px;
+    padding: 20px 0;
+    font-family: "游ゴシック", YuGothic;
+}
+
+.first-view-description {
+    font-family: "游ゴシック", YuGothic;
+    font-size: 12px;
+    color: #333;
+}
+
+.first-view-badge {
+    position: absolute;
+    top: -75px;
+    right: -145px;
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        height: 48px;
+        padding: 0;
+    }
+
+    .right-rectangle {
+        display: none;
+    }
+    
+    .first-view {
+        position: relative;
+        width: 100%;
+    }
+
+    .first-view-content {
+    position: absolute;
+    top: 190px;
+    left: auto;
+    width: 100%;
+    }
+
+    .main-visual {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .first-view {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+        .first-view {
+        position: relative;
+        width: 100%;
+    }
+    /*.header-menu-nav-humburger {
+        display: block;
+        position: relative;
+    }
+
+    .humburger-line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #A2A2A4;
+    }
+
+    .humburger-line:first-child {
+        position: absolute;
+        top: 0;
+    }
+
+    .header-menu-list {
+        background-color: rgba(0, 0, 0, 0.8);
+        display: block;
+        position: fixed;
+        top: 54px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .header-menu-item-link {
+        color: white;
+        padding: 20px 0;
+    }
+
+    .header-menu-item-link > span:first-child {
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+
+    .header-menu-item-link > span:last-child {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        color: #F79214;
+    }*/
+}

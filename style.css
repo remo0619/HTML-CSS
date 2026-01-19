@@ -3,9 +3,21 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+}
+
 .header {
     background-color: white;
-    width: 100%;
     height: 70px;
     position: relative;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05);
@@ -14,29 +26,20 @@ body {
 .header-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
     margin: 0 36px 0 36px;
     max-width: 100%;
-    flex-shrink: 0;
+
 }
 
 .header-logo-link {
-    display: block;
-    height: 20px;
-    width: auto;
+    align-self: center;
 }
 
 .header-logo-img {
     display: block;
     height: 20px;
     width: auto;
-    margin: 25px 0;
 }
-
-.header-menu-nav {
-    display: inline-flex;
-    }
 
 .header-menu-nav-humburger {
     display: none;
@@ -46,8 +49,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    list-style: none;
-    flex-shrink: 0;
 }
 
 .header-menu-item {
@@ -59,11 +60,7 @@ body {
 }
 
 .header-menu-item:last-child {
-    margin-right: 75px;
-}
-
-.header-menu-button {
-    display: flex;
+    margin-right: 0;
 }
 
 .header-menu-item-link > span {
@@ -73,22 +70,13 @@ body {
 }
 
 .header-menu-item-link > span:first-child {
-    font-family: "Loto", sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 12px;
     line-height: 14.4px;
 }
 
 .header-menu-item-link > span:last-child {
     font-size: 10px;
-}
-
-a {
-    text-decoration: none;
-    outline: none;
-}
-
-a:hover {
-    opacity: 0.8;
 }
 
 .header-menu-item-link {
@@ -107,7 +95,6 @@ a:hover {
 
 .first-view {
     position: relative;
-    width: 100%;
     height: 739px;
 }
 
@@ -140,15 +127,21 @@ a:hover {
     z-index: -1;
 }
 
+.sp-main-visual {
+    display: none;
+}
+
 .first-view-container {
     position: relative;
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 219px;
 }
 
 .first-view-content {
     position: absolute;
-    top: 190px;
-    left: 430px;
-    width: 482px;
+    width: fit-content;
 }
 
 .first-view-title {
@@ -180,34 +173,115 @@ a:hover {
     right: -145px;
 }
 
-@media screen and (max-width: 414px) {
-    .header {
-        height: 48px;
+@media screen and (max-width: 1080px) {
+    .header-container {
+        height: 100%;
+    }
+
+    .header-menu-list {
+        display: none;
+    }
+
+    .first-view-container {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 100%;
+    }
+
+    .header-menu-list {
+        display: none;
+    }
+
+    .header-menu-nav-humburger {
+        display: block;
+        position: relative;
+        align-self: center;
+        width: 24px;
+        height: 17px;
+        margin: 25px 0;
+        z-index: 100;
+    }
+
+    .humburger-line {
+        position: absolute;
+        top: 50%;
         width: 100%;
-        padding: 0;
+        height: 2px;
+        background-color: #A2A2A4;
+    }
+
+    .humburger-line:first-child {
+        top: 0;
+    }
+
+    .humburger-line:last-child {
+        top: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .header-container {
+        max-width: 100%;
+        margin: 0 16px;
+    }
+
+    .header-logo-img {
+        height: 18px;
+    }
+
+    .first-view-container {
+        padding-top: 400px;
+    }
+
+    .first-view-title {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .first-view-badge {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        right: 150px;
+    }
+
+    .left-rectangle {
+        display: none;
+    }
+
+    .fill-rectangle {
+        display: none;
     }
 
     .right-rectangle {
         display: none;
     }
-    
-    .first-view {
-        position: relative;
-        width: 100%;
-    }
-
-    .first-view-content {
-    position: absolute;
-    top: 190px;
-    left: auto;
-    width: 100%;
-    }
 
     .main-visual {
-    position: absolute;
-    top: -70px;
-    right: 0;
-    width: 100%;
-    z-index: -1;
+        display: none;
     }
+
+    .sp-main-visual {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .right-rectangle {
+        display: none;
+    }
+    
+    .first-view-container {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 100%;
+    }
+
 }
